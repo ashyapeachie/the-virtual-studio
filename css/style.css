@@ -45,10 +45,78 @@ body {
 }
 
 /* button */
+#theme-toggle {
+    background: var(--accent-color);
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 /* hero */
+.hero {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
+.hero-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: var(--secondary-text);
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.explore-btn {
+    background: linear-gradient(
+        135deg,
+        var(--accent-color),
+        var(--accent-dark)
+    );
+
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow:
+        0 10px 20px rgba(255,143,171,0.25);
+}
+
+.explore-btn:hover {
+    transform:
+        translateY(-3px)
+        scale(1.03);
+    box-shadow:
+        0 18px 30px rgba(255,143,171,0.35);
+}
 /* gallery */
+.gallery-section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
 
 /* art card stuff */
 .art-card {
